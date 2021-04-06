@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <title>Squire's Site</title>
+        <link rel="icon" href="Images/Programming-Memes-Programmer-while-sleeping.jpg">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="Reset.css">
+        <script src="Script.js"></script>
+    </head>
+    
+    <body>
+        
+        <nav class="topnav">
+			<div class="collapsible" id="collapsible">
+				<a href="#video">Video</a>
+                <a href="#about">About Me</a>
+                <a href="#form">Form</a>
+			</div>
+			<button onclick="nav()" class="menuButton">≡</button>
+            <img src="Images/Logo_Simple.jpg">
+		</nav>
+        
+        <main>
+        <article class="intro" id="video">
+            <pTitle>
+                Dylan Squire Fake Resume
+            </pTitle>
+            <br>
+            <pText>
+                Calgary based programming and web design student
+            </pText>
+        </article>
+        
+        <div class="Video" id="about">
+               <video poster="resources/preview.png" controls width="480" height="270" poster="Images/Thumb.jpg">
+                   <source src="Video/Welcome.mp4" type='video/mp4'>
+                   <source src="Video/Welcome.webm" type='video/webm'>
+                   <source src="Video/Welcome.ogv" type='video/ogg'>
+                </video>
+                <br>
+                <br>
+            </div>
+            
+        <div class="container-xl p-3 my-3 bg-info text-white">
+            <div class="row" style="margin: auto">
+                <pTitle style="font-size: var(--title)">About Me</pTitle>
+                <p style="font-size: var(--text)">I am 20 years old and have a passion for all things technology. Over the years I have dedicated myself towards completing a variety of programming tasks as I strive to hone my skills and further build upon my skillset with each new challenge I face. I'm a hard worker and eager to learn all that I can,  able to perform well under pressure and communicate effectively to achieve my goals.</p>
+                <br>
+            </div>
+            
+            <div class="row" id="content">
+                <div class="col-xs-6 col-sm-4 col-md-4 col- lg-4"> 
+                    <figure><img src="Images/Thumb.jpg" id="img"> </figure><figcaption id="caption">Dylan works from home</figcaption> </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col- lg-4">
+                    <figure><img src="Images/MarsUniversity.png" id="img"></figure><figcaption id="caption">Graduated from Mars University in 2024</figcaption> </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col- lg-4">
+                    <figure><img src="Images/stampede.jpg" style="width: 240px; padding-top: 20px; padding-right: 40px;"></figure><figcaption id="caption">Volunteered at the Calgary Stampede</figcaption> </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col- lg-4">
+                    <figure><img src="Images/coder.jpg" id="img"></figure><figcaption id="caption">Developed code for an anti-piracy firm</figcaption> </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col- lg-4"> 
+                    <figure><img src="Images/laptop.jpg" style="width: 202px; padding-top: 10px"></figure><figcaption id="caption">Worked for a laptop production company</figcaption> </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col- lg-4"> 
+                    <figure><img src="Images/esports.jpg" style="width: 240px; padding-top: 20px; padding-right: 40px;"></figure><figcaption id="caption">Worked for an esports organization</figcaption> </div>
+                
+            </div>
+        </div>
+        
+            
+            
+            
+            
+            
+            
+            
+            
+        
+        <form id="form" action="mailto:dsqui608@mtroyal.ca" method="post" enctype="text/plain">
+            <fieldset class="intro">
+                <pTitle>Contact Me!</pTitle>
+                <p style="color: crimson">Please fill out all indicated fields</p>
+                <br>
+				    <label style="font-size: var(--text)" for="subject">Subject:
+                        <br>
+						<input name="Subject" id="subject" maxlength="50" type="text" placeholder="Reason for contact" style="right: 0; width: calc(100% - 0.6em)">					
+                    </label>
+				    <br>
+                    <br>
+                    
+                    <label style="font-size: var(--text)" for="question"> <p style="display: inline; color: crimson">*</p>
+                        Question:
+                        <br>
+                        <textarea wrap="soft" name="Description" id="question" required placeholder="Type your Query here" maxlength="500" style="height: 8em; width: 400px; font-family: sans-serif;"></textarea>
+				    </label>
+                    <br>
+                    <br>
+            
+				    <label class="contact" for="email">
+                        <p style="display: inline; color: crimson">*</p>
+                        Email:
+                        <input name="Email" id="email" style="margin-right: 10px" type="email" required maxlength="30" size="25" placeholder="YourName@email.ca" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+				    </label>
+                
+				    <label class="contact" for="phone">Phone:
+                        <input name="Phone number" placeholder="123-456-7890" type="tel" size="25" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				    </label>
+                    <br>
+                    <br>
+                    <button type="submit">Submit</button>
+				    <br><br>
+                    
+            </fieldset>
+        </form>
+         
+        </main>       
+        <br> <br> <br>
+        
+    </body>
+
+
+    <canvas></canvas>
+</html>

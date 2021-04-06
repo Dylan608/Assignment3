@@ -1,0 +1,115 @@
+:root {                 
+    --box: aliceblue;
+    --title: 36px;
+    --text: 26px;
+    --margin: auto;
+    --img: 180px;
+}
+
+.topnav {
+	background-color:darkgray;
+	width: auto;
+    border: solid black 2px;
+	position: sticky;
+    z-index: 3;
+	top: 0;
+	padding: 10px;
+}
+.menuButton {
+	float: left;
+	margin: auto;
+    height: 50px;
+	width: 50px;
+	border-radius: 0.75em;
+	border: none;
+	color: deepskyblue;
+	font-size: 35px;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+}
+.menuButton:hover {
+	color: black;
+}
+.collapsible {
+	padding: 0em 1em;
+	overflow: hidden;
+	height: 0;
+	transition: height 0.4s ease-out;
+	background-color: #ccc;
+}
+.collapsible a {
+	display: block;
+	padding: 10px;
+}
+
+img[src*="Logo"]{
+    display: block;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.Video{
+    margin-top: 30px
+}
+
+
+.intro{
+    max-width: 1140px;
+    text-align: center;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    padding: 10px;
+    background-color: var(--box);
+}
+
+pTitle{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: var(--title);
+}
+
+pText{
+    display: block;
+    text-align: center;
+    font-size: var(--text);
+}
+
+
+#img{
+    display: block;
+    padding-top: 10px;
+    width: var(--img);
+    max-width: 300px;
+}
+
+
+#caption{
+    padding-bottom: 10px;
+}
+
+
+.Video{
+    display: block;
+    text-align: center;
+}
+
+
+
+#description:focus{
+    outline: 2px dashed deeppink;
+}
+.pointer{
+    cursor: pointer
+}
+
+canvas {
+	position: fixed;
+	z-index: -1; top: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient( 0deg, #263e78 10px, #757b8a);
+}
